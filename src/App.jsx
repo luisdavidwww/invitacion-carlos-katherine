@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import AppRoutes from "./Routes/AppRoutes";              
 
 function App() {
@@ -10,4 +9,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
