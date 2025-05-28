@@ -9,7 +9,35 @@ const Home = () => {
 
   return (
     <div>
-        {isInvitadoValido ? (<div>componente con imagen</div>):null}
+        {isInvitadoValido ? (<div>j
+            j
+            j
+            j
+            j
+            j
+            j
+            j
+            j
+            Nueva Ventana
+            j
+            j
+            j
+            j
+            j
+            j
+            j
+            j
+            j
+            j
+            j
+            j
+            j
+            j
+            j
+            j
+
+            
+        </div>):null}
         <FormCodInvitado InvitadoValidate={setIsInvitadoValido}/>
     </div>
   )
