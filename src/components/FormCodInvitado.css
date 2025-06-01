@@ -84,7 +84,6 @@
         -0.3px  0.3px 0 #68483E,  
     }
 
-
     .inputCodigo {
         background-color: white;         
         border: 2px solid white;      
@@ -103,6 +102,29 @@
         color: #7a635c; /* Marrón */
         opacity: 1;     /* Asegura que el color se vea claramente */
       }
+
+
+
+          
+    .title-Invitado{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+        font-weight: 800;
+        font-size: 0.7rem;
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: #ffffff;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        /* Borde en la fuente */
+        text-shadow: 
+            -0.3px  0.3px 0 #ffffff,  
+        }
+    
+
 
   
   @media only screen and (max-width: 960px) { 
@@ -211,7 +233,15 @@
             justify-content: center;
             width: 100%;
           }
+          .containerbtn-two{
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            width: 70%;
+           top: 80%;
+          }
 
+          
 
     .btn-outline-one{
         display: flex;
@@ -240,5 +270,105 @@
       background-color: #0C396B;
       border: 3px solid #0C396B;
     }
+
+
+
+
+    .container-invitado-acept{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .title-Invitado {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+        font-weight: 800;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        color: #ffffff;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+      
+        text-decoration: underline;
+        text-decoration-color: #ffffff;
+        text-decoration-thickness: 1px;   /* 👈 grosor más delgado */
+        text-underline-offset: 20px;
+      
+        text-shadow: -0.3px 0.3px 0 #ffffff;
+    }
+
+    .text-Invitado{
+        justify-content: center;
+        display: flex;
+        width: 60%;
+        text-align: center;
+        font-family: "Mosseta";
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: #A3D3E2;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        /* Borde en la fuente */
+        text-shadow: 
+            -0.3px  0.3px 0 #68483E,  
+        }
+    
+
+        .title-numInvitado{
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            text-align: center;
+            font-family: "Dancing Script", cursive;
+            font-weight: 800;
+            font-size: 3rem;
+            text-decoration: none;
+            letter-spacing: 0px;
+            color: #A3D3E2;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            /* Borde en la fuente */
+            text-shadow: 
+            -0.3px  0.3px 0 #68483E,  
+            }
+        
+
+        
+
+
+            .btn-outline-two{
+                display: flex;
+                justify-content: center;
+                width: 75%;
+                z-index: 100;
+                background-color: #0C396B;
+                padding: 0.5rem 1rem;
+                border: 3px solid #0C396B;
+                transition: all 0.3s ease-out;
+                border-radius: 50px;
+                text-decoration-line: none;
+                outline: none;
+                cursor: pointer;
+                margin-top: 0rem; 
+                font-family: 'Mosseta';
+                letter-spacing: 2px;
+                font-size: 0.8rem;
+                color: #ffffff;
+                margin-top: 1rem;
+                text-decoration: none;
+            }
+            
+            .btn-outline-two:hover{
+              color: #ffffff;
+              background-color: #1682fd;
+              border: 3px solid #1682fd;
+            }
 
 }
