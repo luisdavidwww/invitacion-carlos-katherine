@@ -4,8 +4,10 @@ import React from 'react';
 import { useForm } from '../hook/useForm';
 //Listado de Invitados
 import { listInvitados } from '../Data/ListaInvitados';
+//Estilos
+import './FormCodInvitado.css'
 
-const FormCodInvitado = ({InvitadoValidate}) => {
+const FormCodInvitado = ({InvitadoValidate, SetInvitado}) => {
 
 
     //Estado Inicial del Formulario
@@ -14,33 +16,40 @@ const FormCodInvitado = ({InvitadoValidate}) => {
     })
 
     const Invitadosvalidate = (e) => {
-        const codigoEsValido = listInvitados.some(
-            (invitados) => invitados.codigoVerificacion === codigo
-          );
-
-        if(codigoEsValido) {
-            InvitadoValidate(true);
-            window.alert('¡Código correcto!'); // Alerta emergente
+        const invitadoEncontrado = listInvitados.find(
+          (invitado) => invitado.codigoVerificacion === codigo
+        );
+      
+        if (invitadoEncontrado) {
+          SetInvitado(invitadoEncontrado);     // Guarda la información completa
+          InvitadoValidate(true);              // Marca como válido
         } else {
-            InvitadoValidate(false);
-            window.alert('¡Código incorrecto!'); // Alerta emergente
+          SetInvitado(null);                   // Limpia si no es válido
+          InvitadoValidate(false);             // Marca como inválido
         }
       };
 
-
   return (
     <div>
-        <form onSubmit={Invitadosvalidate}>
-            <label htmlFor="">INGRESÁ TU CÓDIGO PARA CONTINUAR:</label>
+        <div className='header-container'>
+        <form onSubmit={Invitadosvalidate} className='formInvidatos'>
+            <label htmlFor="" className='title-intro' >¡Nos encantaria que seas parte de este día tan especial!</label>
+            <span className='title-input' >INGRESÁ TU CÓDIGO PARA CONTINUAR:</span>
             <input 
                 type="text" 
                 id="codigo"
-                placeholder="Ingrese su correo electrónico"
+                placeholder="Código de invitación"
+                className='inputCodigo'
                 value={codigo}
                 onChange={(e) => onChange(e.target.value, 'codigo')}
             />
-            <button type='button' onClick={Invitadosvalidate}>VER INVITACIÓN</button>
+            <div className='containerbtn'>
+                <button className='btn-outline-one' type='button' onClick={Invitadosvalidate}>VER INVITACIÓN</button>
+            </div>
         </form>
+        
+        </div>  
+        
     </div>
   )
 }

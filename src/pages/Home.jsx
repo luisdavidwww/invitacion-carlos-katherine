@@ -2,43 +2,16 @@ import {React, useState} from 'react';
 
 // Componentes
 import  FormCodInvitado  from "../components/FormCodInvitado";
+import  InvitadoValido  from "../components/InvitadoValido";
 
 
 const Home = () => {
-    const [isInvitadoValido, setIsInvitadoValido] = useState(false)
+    const [isInvitadoValido, setIsInvitadoValido] = useState(false);
+    const [invitado, setInvitado] = useState([]);
 
   return (
     <div>
-        {isInvitadoValido ? (<div>j
-            j
-            j
-            j
-            j
-            j
-            j
-            j
-            j
-            Nueva Ventana
-            j
-            j
-            j
-            j
-            j
-            j
-            j
-            j
-            j
-            j
-            j
-            j
-            j
-            j
-            j
-            j
-
-            
-        </div>):null}
-        <FormCodInvitado InvitadoValidate={setIsInvitadoValido}/>
+        {isInvitadoValido ? (<InvitadoValido Invitado={invitado}/>):(<FormCodInvitado InvitadoValidate={setIsInvitadoValido} SetInvitado={setInvitado}/>)}
     </div>
   )
 }
