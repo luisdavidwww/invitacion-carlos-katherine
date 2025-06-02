@@ -1,5 +1,10 @@
 import React from 'react';
 
+
+
+//componentes
+import CarouselFuntion from "./CarouselFuntion";
+
 //Estilos
 import './Style.css';
 
@@ -21,6 +26,10 @@ const Forth = () => {
       <div className='containerbtn-Ca'>
           <a className='btn-outline-Ca' type='button' >CONFIRMAR ASISTENCIA </a>
       </div>
+      <div style={{marginTop:'28rem'}}>
+        <CarouselFuntion />
+      </div>
+     
     </div>
   )
 }
