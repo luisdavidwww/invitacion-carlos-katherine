@@ -15,10 +15,6 @@ const Forth = () => {
           <a className='btn-outline-photo' type='button' >SUBIR FOTOS </a>
       </div>
 
-      <div className='containerbtn-photo'>
-          <a className='btn-outline-photo' type='button' >SUBIR FOTOS </a>
-      </div>
-
       <div className='containerbtn-Bank'>
           <a className='btn-outline-Bank' type='button' >VER DATOS BANCARIOS </a>
       </div>
@@ -26,9 +22,8 @@ const Forth = () => {
       <div className='containerbtn-Ca'>
           <a className='btn-outline-Ca' type='button' >CONFIRMAR ASISTENCIA </a>
       </div>
-      <div style={{marginTop:'28rem'}}>
-        <CarouselFuntion />
-      </div>
+
+        <CarouselFuntion condition={"algo"}/>
      
     </div>
   )

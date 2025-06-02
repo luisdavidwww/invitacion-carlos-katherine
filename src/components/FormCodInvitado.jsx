@@ -34,7 +34,7 @@ const FormCodInvitado = ({InvitadoValidate, SetInvitado}) => {
         <div className='header-container'>
         <form onSubmit={Invitadosvalidate} className='formInvidatos'>
             <label htmlFor="" className='title-intro' >¡Nos encantaria que seas parte de este día tan especial!</label>
-            <span className='title-input' >INGRESÁ TU CÓDIGO PARA CONTINUAR:</span>
+            <span className='title-input' >INGRESA TU CÓDIGO PARA CONTINUAR:</span>
             <input 
                 type="text" 
                 id="codigo"
