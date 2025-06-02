@@ -8,7 +8,7 @@ import './Style.css';
 const Second = () => {
 
         // Establecer la fecha objetivo al 1ro de marzo del año actual a las 8:00 PM
-        const targetDate = moment(`${moment().year()}-08-01 20:00:00`, 'YYYY-MM-DD HH:mm:ss');
+        const targetDate = moment(`${moment().year()}-08-22 21:00:00`, 'YYYY-MM-DD HH:mm:ss');
 
         const calculateTimeLeft = () => {
           const now = moment();
