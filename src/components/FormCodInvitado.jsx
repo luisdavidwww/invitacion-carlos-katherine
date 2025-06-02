@@ -1,13 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Hooks
 import { useForm } from '../hook/useForm';
 //Listado de Invitados
 import { listInvitados } from '../Data/ListaInvitados';
+//Componentes
+import Loader from "../components/Loader/Loader";
 //Estilos
 import './FormCodInvitado.css'
 
 const FormCodInvitado = ({InvitadoValidate, SetInvitado}) => {
+
+    const [loanding, setLoanding] = useState(false);
+
+    //Peticion principal 
+    const getHome = async () => {
+          try {
+            //Se inicializa el componente "Cargando"
+            setLoanding(true);
+
+            // Verificar conexión a Internet
+            if (!navigator.onLine) {
+              throw new Error('No hay conexión a Internet');
+            }
+
+            // Simular una pequeña demora antes de desactivar el loader (500ms en este ejemplo)
+            setTimeout(() => {
+              //Desactiva el componente "Cargando" y no se carga ningún error 
+              setLoanding(false);
+            }, 1500); // 500ms de retraso
+
+          } catch (error) {
+            setLoanding(false);
+          }
+    };
 
 
     //Estado Inicial del Formulario
@@ -29,29 +55,39 @@ const FormCodInvitado = ({InvitadoValidate, SetInvitado}) => {
         }
       };
 
+
+  useEffect(() => {
+    getHome();
+  }, []);
+
+
   return (
-    <div>
+    <>
+      {
+        loanding ? (<Loader />):(
         <div className='header-container'>
-        <form onSubmit={Invitadosvalidate} className='formInvidatos'>
-            <label htmlFor="" className='title-intro' >¡Nos encantaria que seas parte de este día tan especial!</label>
-            <span className='title-input' >INGRESA TU CÓDIGO PARA CONTINUAR:</span>
-            <input 
-                type="text" 
-                id="codigo"
-                placeholder="Código de invitación"
-                className='inputCodigo'
-                value={codigo}
-                onChange={(e) => onChange(e.target.value, 'codigo')}
-            />
-            <div className='containerbtn'>
-                <button className='btn-outline-one' type='button' onClick={Invitadosvalidate}>VER INVITACIÓN</button>
-            </div>
-        </form>
+          <form onSubmit={Invitadosvalidate} className='formInvidatos'>
+              <label htmlFor="" className='title-intro' >¡Nos encantaria que seas parte de este día tan especial!</label>
+              <span className='title-input' >INGRESA TU CÓDIGO PARA CONTINUAR:</span>
+              <input 
+                  type="text" 
+                  id="codigo"
+                  placeholder="Código de invitación"
+                  className='inputCodigo'
+                  value={codigo}
+                  onChange={(e) => onChange(e.target.value, 'codigo')}
+              />
+              <div className='containerbtn'>
+                  <button className='btn-outline-one' type='button' onClick={Invitadosvalidate}>VER INVITACIÓN</button>
+              </div>
+            </form>
+          </div>  
+        )
+      }
+       
         
-        </div>  
-        
-    </div>
+    </>
   )
 }
 
-export default FormCodInvitado
+export default FormCodInvitado;
