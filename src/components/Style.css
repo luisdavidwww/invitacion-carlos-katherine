@@ -673,4 +673,14 @@
         height: auto;
         z-index: 1;
       }
+
+      /* Estilos para los dots del carrusel */
+      .slick-dots li button:before {
+        color: rgb(10, 65, 87) !important; /* Cambia los dots a blanco */
+      }
+
+      /* Dot activo (opcional para cambiar el color del activo también) */
+      .slick-dots li.slick-active button:before {
+        color: rgb(10, 65, 87) !important;  /* También blanco o usa otro color si quieres destacar */
+      }
     }
