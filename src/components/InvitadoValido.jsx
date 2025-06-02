@@ -1,6 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const InvitadoValido = ({ Invitado }) => {
+
+    const navigate = useNavigate();
+
+    const abrirInvitacion = () => {
+        console.log('Invitado:', Invitado); // Verifica aquí
+        navigate('/invitacion', { state: { invitado: Invitado } });
+      };
+      
+
   return (
     <div className='header-container-two'>
         
@@ -13,7 +23,7 @@ const InvitadoValido = ({ Invitado }) => {
             </p>
 
             <div className='containerbtn-two'>
-                <button className='btn-outline-two' type='button' >ABRIR INVITACIÓN</button>
+                <button className='btn-outline-two' type='button' onClick={abrirInvitacion} >ABRIR INVITACIÓN</button>
             </div>
 
       
