@@ -5,18 +5,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-import FOTOS_1 from "../images/FOTOS_1.png";
-import FOTOS_2 from "../images/FOTOS_2.png";
-import FOTOS_3 from "../images/FOTOS_3.png";
-import FOTOS_4 from "../images/FOTOS_4.png";
-import FOTOS_5 from "../images/FOTOS_5.png";
-import FOTOS_6 from "../images/FOTOS_6.png";
-import FOTOS_7 from "../images/FOTOS_1.png";
+import FOTOS_1 from "../images/FOTOS_8.png";
+import FOTOS_2 from "../images/FOTOS_9.png";
+import FOTOS_3 from "../images/FOTOS_10.png";
+import FOTOS_4 from "../images/FOTOS_11.png";
+import FOTOS_5 from "../images/FOTOS_12.png";
+import FOTOS_6 from "../images/FOTOS_13.png";
+import FOTOS_7 from "../images/FOTOS_14.png";
+import FOTOS_8 from "../images/FOTOS_15.png"
 
-import image from "../images/Recurso-1.png";
-import image2 from "../images/Recurso-2.png";
 
-const CarouselFuntion = ({condition}) => {
+const CarouselFuntionTwo = ({condition}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -56,4 +55,4 @@ const CarouselFuntion = ({condition}) => {
   );
 }
 
-export default CarouselFuntion;
+export default CarouselFuntionTwo;

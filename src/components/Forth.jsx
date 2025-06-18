@@ -3,7 +3,7 @@ import React from 'react';
 
 
 //componentes
-import CarouselFuntion from "./CarouselFuntion";
+import CarouselFuntionTwo from "./CarouselFuntionTwo";
 
 //Estilos
 import './Style.css';
@@ -23,7 +23,7 @@ const Forth = () => {
           <a className='btn-outline-Ca' type='button' >CONFIRMAR ASISTENCIA </a>
       </div>
 
-        <CarouselFuntion condition={"algo"}/>
+        <CarouselFuntionTwo condition={"algo"}/>
      
     </div>
   )
