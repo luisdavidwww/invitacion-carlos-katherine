@@ -5,7 +5,7 @@ import { useForm } from '../hook/useForm';
 //Listado de Invitados
 import { listInvitados } from '../Data/ListaInvitados';
 //Componentes
-import Loader from "../components/Loader/Loader";
+import Loader from "./Loader/Loader";
 //Estilos
 import './FormCodInvitado.css'
 
@@ -41,20 +41,32 @@ const FormCodInvitado = ({InvitadoValidate, SetInvitado}) => {
         codigo:''
     })
 
-    const Invitadosvalidate = (e) => {
-        const invitadoEncontrado = listInvitados.find(
-          (invitado) => invitado.codigoVerificacion === codigo
-        );
-      
-        if (invitadoEncontrado) {
-          SetInvitado(invitadoEncontrado);     // Guarda la información completa
-          InvitadoValidate(true);              // Marca como válido
-        } else {
-          SetInvitado(null);                   // Limpia si no es válido
-          InvitadoValidate(false);             // Marca como inválido
-        }
-      };
 
+    const normalizeString = (str) => {
+      return str
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") // quita acentos
+        .replace(/\s+/g, "");            // quita espacios
+    };
+
+
+    const Invitadosvalidate = (e) => {
+      const codigoNormalizado = normalizeString(codigo);
+
+      const invitadoEncontrado = listInvitados.find((invitado) => {
+        const codigoInvitado = normalizeString(invitado.codigoVerificacion);
+        return codigoInvitado === codigoNormalizado;
+      });
+
+      if (invitadoEncontrado) {
+        SetInvitado(invitadoEncontrado);     // Guarda la información completa
+        InvitadoValidate(true);              // Marca como válido
+      } else {
+        SetInvitado(null);                   // Limpia si no es válido
+        InvitadoValidate(false);             // Marca como inválido
+      }
+    };
 
   useEffect(() => {
     getHome();
