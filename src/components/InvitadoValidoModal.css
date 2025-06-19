@@ -1,7 +1,3 @@
-/* Evita que el fondo se mueva al mostrar el modal */
-body {
-  overflow: hidden;
-}
 
 /* Fondo oscuro semitransparente */
 .modal-overlay {
