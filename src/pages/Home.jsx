@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div>
-        {isInvitadoValido ? (<InvitadoValido Invitado={invitado}/>):(<FormCodInvitado InvitadoValidate={setIsInvitadoValido} SetInvitado={setInvitado}/>)}
+      <FormCodInvitado InvitadoValidate={setIsInvitadoValido} SetInvitado={setInvitado} Invitadof={invitado} isInvitadoValidoF={isInvitadoValido}/>
     </div>
   )
 }
