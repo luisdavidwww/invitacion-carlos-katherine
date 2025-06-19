@@ -13,7 +13,7 @@ const ThirdC = () => {
       </div>
       <CarouselFuntion />
       <div className='containerbtn-song'>
-          <a className='btn-outline-song' type='button' >SUGERIR CANCIÓN </a>
+          <a className='btn-outline-song' type='button'href='https://open.spotify.com/playlist/7ef6EvIZjeUgJ32pYvdKro?si=swbmxyG0RmCRnVH1ynCDGA&pi=8Vuk2wVsROOlI&pt=0a29be0e04e88e28914892604c87f3d5' >SUGERIR CANCIÓN </a> 
       </div>
 
     </div>
