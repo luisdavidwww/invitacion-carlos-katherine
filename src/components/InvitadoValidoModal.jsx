@@ -22,6 +22,9 @@ const InvitadoValidoModal = ({ Invitado, onClose }) => {
         <p className="text-InvitadoW">¡ESPERAMOS QUE PUEDAN COMPARTIR ESTA FIESTA JUNTO A NOSOTROS!</p>
         <p className="text-InvitadoW" style={{ marginTop: '1.5rem' }}>Número de invitados:</p>
         <p className="title-numInvitadoW">{Invitado.numInvitados}</p>
+        <div style={{ display:'flex', justifyContent:'center'}}>
+          <button className='btn-outline-two' type='button' onClick={abrirInvitacion} >ABRIR INVITACIÓN</button>
+        </div>
       </div>
     </div>
   );
