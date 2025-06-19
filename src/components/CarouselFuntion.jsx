@@ -7,9 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 import FOTOS_1 from "../images/FOTOS_1.png";
 import FOTOS_2 from "../images/FOTOS_2.png";
-import FOTOS_3 from "../images/FOTOS_3.png";
+
 import FOTOS_4 from "../images/FOTOS_4.png";
-import FOTOS_5 from "../images/FOTOS_5.png";
+
 import FOTOS_6 from "../images/FOTOS_6.png";
 import FOTOS_7 from "../images/FOTOS_7.png";
 import FOTOS_16 from "../images/FOTOS_16.png";
@@ -36,13 +36,7 @@ const CarouselFuntion = ({condition}) => {
           <img src={FOTOS_2} className="imgCarousel" />
         </div>
         <div className="contenedorImg">
-          <img src={FOTOS_3} className="imgCarousel" />
-        </div>
-        <div className="contenedorImg">
           <img src={FOTOS_4} className="imgCarousel" />
-        </div>
-        <div className="contenedorImg">
-          <img src={FOTOS_5} className="imgCarousel" />
         </div>
         <div className="contenedorImg">
           <img src={FOTOS_6} className="imgCarousel" />
