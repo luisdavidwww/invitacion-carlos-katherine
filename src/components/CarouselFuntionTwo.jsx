@@ -12,7 +12,9 @@ import FOTOS_4 from "../images/FOTOS_11.png";
 import FOTOS_5 from "../images/FOTOS_12.png";
 import FOTOS_6 from "../images/FOTOS_13.png";
 import FOTOS_7 from "../images/FOTOS_14.png";
-import FOTOS_8 from "../images/FOTOS_15.png"
+import FOTOS_18 from "../images/FOTOS_18.png"
+import FOTOS_19 from "../images/FOTOS_19.png"
+import FOTOS_20 from "../images/FOTOS_20.png"
 
 
 const CarouselFuntionTwo = ({condition}) => {
@@ -49,6 +51,15 @@ const CarouselFuntionTwo = ({condition}) => {
         </div>
         <div className="contenedorImg">
           <img src={FOTOS_7} className="imgCarousel" />
+        </div>
+        <div className="contenedorImg">
+          <img src={FOTOS_18} className="imgCarousel" />
+        </div>
+        <div className="contenedorImg">
+          <img src={FOTOS_19} className="imgCarousel" />
+        </div>
+        <div className="contenedorImg">
+          <img src={FOTOS_20} className="imgCarousel" />
         </div>
       </Slider>
     </div>

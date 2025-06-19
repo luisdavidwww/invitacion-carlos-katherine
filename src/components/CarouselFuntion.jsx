@@ -12,9 +12,8 @@ import FOTOS_4 from "../images/FOTOS_4.png";
 import FOTOS_5 from "../images/FOTOS_5.png";
 import FOTOS_6 from "../images/FOTOS_6.png";
 import FOTOS_7 from "../images/FOTOS_1.png";
-
-import image from "../images/Recurso-1.png";
-import image2 from "../images/Recurso-2.png";
+import FOTOS_16 from "../images/FOTOS_16.png";
+import FOTOS_17 from "../images/FOTOS_17.png";
 
 const CarouselFuntion = ({condition}) => {
   const settings = {
@@ -50,6 +49,12 @@ const CarouselFuntion = ({condition}) => {
         </div>
         <div className="contenedorImg">
           <img src={FOTOS_7} className="imgCarousel" />
+        </div>
+        <div className="contenedorImg">
+          <img src={FOTOS_17} className="imgCarousel" />
+        </div>
+        <div className="contenedorImg">
+          <img src={FOTOS_16} className="imgCarousel" />
         </div>
       </Slider>
     </div>
