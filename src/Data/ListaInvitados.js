@@ -353,4 +353,10 @@ export const listInvitados = [
     numInvitados: 1,
     codigoVerificacion: "MPetquero"
   },
+  {
+    id: 60,
+    nombres: "Luis Y Genesis",
+    numInvitados: 1,
+    codigoVerificacion: "123"
+  },
 ];
