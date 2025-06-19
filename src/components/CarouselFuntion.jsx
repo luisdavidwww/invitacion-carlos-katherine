@@ -11,7 +11,7 @@ import FOTOS_3 from "../images/FOTOS_3.png";
 import FOTOS_4 from "../images/FOTOS_4.png";
 import FOTOS_5 from "../images/FOTOS_5.png";
 import FOTOS_6 from "../images/FOTOS_6.png";
-import FOTOS_7 from "../images/FOTOS_1.png";
+import FOTOS_7 from "../images/FOTOS_7.png";
 import FOTOS_16 from "../images/FOTOS_16.png";
 import FOTOS_17 from "../images/FOTOS_17.png";
 
