@@ -9,7 +9,7 @@ export const listInvitados = [
     id: 2,
     nombres: "Familia Drikha Lizardo",
     numInvitados: 2,
-    codigoVerificacion: "DrikhaLizardo"
+    codigoVerificacion: "aaaaDrikhaLizardo"
   },
   {
     id: 3,
