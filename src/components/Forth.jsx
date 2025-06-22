@@ -20,7 +20,7 @@ const Forth = () => {
       </div>
 */}
       <div className='containerbtn-Ca'>
-          <a className='btn-outline-Ca' type='button' >CONFIRMAR ASISTENCIA </a>
+          <a className='btn-outline-Ca' type='button'  href='https://walink.co/e43e4a' >CONFIRMAR ASISTENCIA </a>
       </div>
 {/*
         <CarouselFuntionTwo condition={"algo"}/>
