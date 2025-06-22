@@ -98,6 +98,25 @@
     text-align: center;
   }
 
+  .Quina-Container{
+    background-image: url('../images/INVITACION-CARLOS-Y-KATHE_7.jpg');
+    background-color: rgba(0,0,0,0);
+    background-size: cover; /* Ancho fijo de 50rem, altura automática */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    height: 370vh; /* Siempre ocupa toda la pantalla */
+    min-height: 370vh;
+    width: 50rem;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); /* Centra el contenedor horizontalmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
 
 
@@ -414,8 +433,24 @@
         background-repeat: no-repeat;
         background-blend-mode: darken;
         width: 100%;
-        height: 220vh; /* Siempre ocupa toda la pantalla */
-        min-height: 220vh;
+        height: 150vh; /* Siempre ocupa toda la pantalla */
+        min-height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'PT Sans', sans-serif;
+      }
+
+      .Quina-Container {
+        background-image: url('../images/INVITACION-CARLOS-Y-KATHE_7.jpg');
+        background-size: cover; /* Ajusta la imagen sin deformarla */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        width: 100%;
+        height: 170vh; /* Siempre ocupa toda la pantalla */
+        min-height:170vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -519,7 +554,7 @@
         position: absolute;
         justify-content: center;
         width: 70%;
-        top: 11%;
+        top: 18%;
       }
 
       .btn-outline-photo{
@@ -601,7 +636,7 @@
         position: absolute;
         justify-content: center;
         width: 70%;
-        top: 60%;
+        top: 87%;
       }
 
       .btn-outline-Ca{

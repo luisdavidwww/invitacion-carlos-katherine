@@ -5,6 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import Second from "../components/Second";
 import ThirdC from "../components/ThirdC";
 import Forth from "../components/Forth";
+import Quina from "../components/Quina";
 import Loader from "../components/Loader/Loader";
 
 import '../components/Style.css'
@@ -66,6 +67,7 @@ const Invitacion = ({}) => {
             <Second />
             <ThirdC />
             <Forth />
+            <Quina />
           </>
           )
       }
