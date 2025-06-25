@@ -359,4 +359,16 @@ export const listInvitados = [
     numInvitados: 1,
     codigoVerificacion: "123"
   },
+  {
+    id: 61,
+    nombres: "Mary Mosquera",
+    numInvitados: 4,
+    codigoVerificacion: "MMosquera"
+  },
+   {
+    id: 61,
+    nombres: "Levis Chavez",
+    numInvitados: 3,
+    codigoVerificacion: "LChavez"
+  },
 ];
