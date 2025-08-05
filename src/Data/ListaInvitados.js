@@ -371,4 +371,22 @@ export const listInvitados = [
     numInvitados: 3,
     codigoVerificacion: "LChavez"
   },
+  {
+    id: 62,
+    nombres: "Nereida Corona",
+    numInvitados: 1,
+    codigoVerificacion: "NCorona"
+  },
+  {
+    id: 63,
+    nombres: "Rosa y Gladys Medina",
+    numInvitados: 2,
+    codigoVerificacion: "RGMedina"
+  },
+  {
+    id: 64,
+    nombres: "Familia Arvelo Villamizar ",
+    numInvitados: 3,
+    codigoVerificacion: "FAVillamizar"
+  }
 ];
