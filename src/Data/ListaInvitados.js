@@ -392,7 +392,9 @@ export const listInvitados = [
   {
     id: 65,
     nombres: "Familia Bracho Osorio",
-    numInvitados: 3,
+    numInvitados: 2,
     codigoVerificacion: "FBOsorio"
   }
+
+
 ];
