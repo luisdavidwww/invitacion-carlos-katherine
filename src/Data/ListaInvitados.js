@@ -388,5 +388,12 @@ export const listInvitados = [
     nombres: "Familia Arvelo Villamizar ",
     numInvitados: 3,
     codigoVerificacion: "FAVillamizar"
+  },
+  {
+    id: 65,
+    nombres: "Familia Bracho Osorio",
+    numInvitados: 3,
+    codigoVerificacion: "FBOsorio"
   }
+  2
 ];
