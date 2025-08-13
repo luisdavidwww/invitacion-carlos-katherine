@@ -395,5 +395,4 @@ export const listInvitados = [
     numInvitados: 3,
     codigoVerificacion: "FBOsorio"
   }
-  2
 ];
